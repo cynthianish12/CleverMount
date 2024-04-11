@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 10px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 45%;
+    position: absolute;
+    top: 70px;
+    left: 40%;
+    background-color: transparent;
+    font-size: 1rem;
+    font-family: serif;
+}
+
+ul li a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    font-size: larger;
+}
+
+ul li a:hover {
+    text-decoration: underline; /* Corrected */
+    transition: 0.5s;
+    color: blue;
+}
+
+.img {
+    width: 100%;
+    height: 100vh;
+}
+
+#h21 {
+    font-size: 5rem;
+    color: rgb(47, 47, 197);
+    margin-left: 300px;
+    font-family: serif;
+}
+#h22 {
+    font-size: 5rem;
+    color: rgb(47, 47, 197);
+    margin-left: 300px;
+    font-family: serif;
+    
+}
+
+#p1 {
+    font-size: 1.5rem;
+    width: 80%;
+    margin-left: 200px;
+}
+#p2 {
+    font-size: 1.5rem;
+    width: 80%;
+    margin-left: 200px;
+}
+
+.carousel-item img {
+    max-width: 900px;
+    max-height: 450px;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+#course {
+    color: white;
+    font-family: serif;
+    font-size: 1.5rem;
+}
+.form input{
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.form button{
+    border: 5px;
+    color: black;
+    background-color: rgb(47, 47, 168);
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 5px;
+}
+.footer{
+    background-color: rgb(185, 185, 218);
+    margin: 0;
+    padding: 20px;
+}
+ li a.active{
+    color: rgb(35, 12, 168);
+    
+}
+ li a.active::after,
+ li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background-color: rgb(20, 170, 170);
+}
+.btn:hover{
+   background-color: blue;
+   color: white;
+}
