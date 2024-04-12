@@ -1,55 +1,72 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+/* Reset default margin and padding */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-ul {
-    margin: 0;
-    padding: 10px;
-    list-style: none;
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+}
+
+/* Header styles */
+.header {
+    background-color: #ecf0f1;
+    padding: 20px;
     display: flex;
     justify-content: space-between;
-    width: 45%;
-    position: absolute;
-    top: 70px;
-    left: 40%;
-    background-color: transparent;
-    font-size: 1rem;
-    font-family: serif;
+    align-items: center;
+ 
 }
 
-ul li a {
-    text-decoration: none;
+.header img {
+    height: 50px;
+}
+
+.header ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.header li {
+    margin-right: 80px;
+}
+
+.header a {
     color: black;
-    display: block;
-    font-size: larger;
+    text-decoration: none;
 }
 
-ul li a:hover {
-    text-decoration: underline; /* Corrected */
-    transition: 0.5s;
-    color: blue;
+.header a.active {
+    font-weight: bold;
 }
+
+/* Container styles */
 .container {
-    max-width: 600px;
-    margin: 50px auto;
+    max-width: 800px;
+    margin: 20px auto;
     padding: 20px;
-    background-color: #fdf5f5;
+    background-color: #fff;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-h1 {
-    font-size: 24px;
+.container h1 {
+    color: #004e98;
     margin-bottom: 10px;
 }
 
-p {
-    font-size: 16px;
+.container p {
+    color: #666;
     margin-bottom: 20px;
+}
+
+/* Form styles */
+.donation-form {
+    max-width: 500px;
+    margin: 0 auto;
 }
 
 .form-group {
@@ -58,33 +75,62 @@ p {
 
 label {
     display: block;
-    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
 }
 
 input[type="text"],
 input[type="email"],
-input[type="number"] {
+input[type="tel"],
+select,
+button {
     width: 100%;
     padding: 10px;
-    font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-sizing: border-box;
 }
 
 button {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    font-size: 18px;
-    background-color: #0e5bad;
+    background-color: #004e98;
     color: #fff;
     border: none;
     border-radius: 5px;
+    padding: 10px 20px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    font-size: 16px;
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #003366;
+}
+
+/* Donation amount styles */
+.form-group .form-group {
+    margin-top: 20px;
+}
+
+.form-group div {
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.form-group input[type="radio"],
+.form-group input[type="number"] {
+    margin-right: 5px;
+}
+li a.active{
+    color: rgb(35, 12, 168);
+    
+}
+ li a.active::after,
+ li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background-color: rgb(20, 170, 170);
 }
