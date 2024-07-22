@@ -1,4 +1,4 @@
-/* Reset default margin and padding */
+
 * {
     margin: 0;
     padding: 0;
@@ -20,6 +20,11 @@ body {
     align-items: center;
  
 }
+.brand img {
+    width: 200px;
+    height: 100px;
+    }
+    
 
 .header img {
     height: 50px;
@@ -134,3 +139,129 @@ li a.active{
     height: 2px;
     background-color: rgb(20, 170, 170);
 }
+.container1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .countries {
+    flex: 1;
+  }
+
+  .selected-country {
+    flex: 1;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+@media (max-width: 768px) {
+    .brand img{
+        width: 300px;
+    }
+    .nav-links {
+        display: none; /* Hide the menu links by default on small screens */
+        flex-direction: column;
+        background-color: rgb(178, 178, 243);
+        position: absolute;
+        width: 100%;
+        top: 140px; /* Adjust based on your navbar height */
+        left: 0;
+        text-align: center;
+        z-index: 999;
+    }
+  
+    .nav-links.active {
+        display: flex; /* Show the menu links when active (toggle button clicked) */
+    }
+  
+    .menu-toggle {
+        display: block; /* Display the menu toggle button on small screens */
+    }
+    /* Add media query for screens with a maximum width of 667px */
+@media screen and (max-width: 667px) {
+    .brand img{
+        width: 300px;
+    }
+    .nav-links {
+        display: none; /* Hide the menu links by default on small screens */
+        flex-direction: column;
+        background-color: rgb(178, 178, 243);
+        position: absolute;
+        width: 100%;
+        top: 140px; /* Adjust based on your navbar height */
+        left: 0;
+        text-align: center;
+        z-index: 999;
+    }
+
+    .nav-links.active {
+        display: flex; /* Show the menu links when active (toggle button clicked) */
+    }
+
+    .menu-toggle {
+        display: block; /* Display the menu toggle button on small screens */
+    }
+    .vis {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    #h21,
+    #h22,
+    #p1,
+    #p2 {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    #h21,
+    #h22{
+        font-size: 3rem;
+    }
+
+    #p1,
+    #p2{
+        font-size: 1.2rem;
+    }
+    .footer {
+        padding: 10px;
+        margin-top: 10px;
+        width: 100;
+    }
+
+    .carousel-item img {
+        max-width: 100%;
+        max-height: 300px;
+    }
+
+    .contact-form{
+        background-color: rgb(143, 143, 243);
+        margin: 23px;
+        padding: 10px;
+        border-radius: 10px;
+        width: 300px;
+    }
+    .contact-form h2 {
+        font-size: 24px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        width: calc(100% - 20px);
+    }
+
+    .form-group label {
+        left: 10px;
+    }
+
+    button {
+        padding: 8px 16px;
+    }
+    .container {
+      margin: 20px;
+    }
+}
+  }
+  
